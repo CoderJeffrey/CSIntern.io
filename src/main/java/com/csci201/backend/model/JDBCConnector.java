@@ -36,7 +36,7 @@ public class JDBCConnector {
         user = "root";
 
         // replace with your own password
-        password = "";
+        password = "wdmzsljh2015A-2024";
         
         conn = DriverManager.getConnection("jdbc:mysql://" + endpoint + ":" + port + "/joblistings", 
                                             user, 

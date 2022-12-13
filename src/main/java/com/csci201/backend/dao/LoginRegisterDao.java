@@ -20,7 +20,7 @@ public class LoginRegisterDao {
         String user = "root";
         
         // replace with your own password
-        String password = "";
+        String password = "wdmzsljh2015A-2024";
 
         String connectionAddress = "jdbc:mysql://" + endpoint + ":" + port + "/joblistings?user=" + user + "&password=" + password;
 
@@ -50,7 +50,7 @@ public class LoginRegisterDao {
             String user = "root";
 
             // replace with your own password
-            String password = "";
+            String password = "wdmzsljh2015A-2024";
 
 
             String connectionAddress = "jdbc:mysql://" + endpoint + ":" + port + "/joblistings?user=" + user + "&password=" + password;
@@ -69,7 +69,7 @@ public class LoginRegisterDao {
         String user = "root";
 
         // replace with your own password
-        String password = "";
+        String password = "wdmzsljh2015A-2024";
 
         String connectionAddress = "jdbc:mysql://" + endpoint + ":" + port + "/joblistings?user=" + user + "&password=" + password;
     
