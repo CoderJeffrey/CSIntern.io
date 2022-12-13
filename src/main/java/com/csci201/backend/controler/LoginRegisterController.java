@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class LoginRegisterController {
     @Autowired
     LoginRegisterServices service = new LoginRegisterServices();
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://frontend-internio.herokuapp.com/")
     @GetMapping("/login/{username}/{password}")
     int Login(@PathVariable String username, @PathVariable String password){
         if (username == null || password == null){
@@ -20,7 +20,7 @@ public class LoginRegisterController {
         }
         return service.LoginService(username, password);
     }
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://frontend-internio.herokuapp.com/")
     @GetMapping("/register/{username}/{password}/{email}")
     int Register(@PathVariable String username, @PathVariable String password, @PathVariable String email){
         if (username == null || password == null || email == null){

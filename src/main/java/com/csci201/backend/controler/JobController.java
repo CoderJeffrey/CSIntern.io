@@ -16,7 +16,7 @@ import com.csci201.backend.service.JobService;
 public class JobController{
     @Autowired
     JobService jobService = new JobService();
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://frontend-internio.herokuapp.com/")
     @GetMapping("/jobs")
     @ResponseBody
     public List<JobModel> getAllJobs() throws SQLException{
@@ -25,7 +25,7 @@ public class JobController{
     }
 
     // Search Function
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://frontend-internio.herokuapp.com/")
     @GetMapping("/search/{companyName}")
     public JobModel searchCompany(@PathVariable String companyName){
         // Locate the job index by the Company Name
@@ -42,7 +42,7 @@ public class JobController{
 
 
     //Get all appliedJobs
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://frontend-internio.herokuapp.com/")
     @GetMapping("/searchUser/{userId}")
     public List<JobModel> getAppliedJobsByUserId(@PathVariable int userId) throws SQLException{
         return jobService.getAppliedJobsByUserId(userId);
@@ -50,7 +50,7 @@ public class JobController{
 
 
     // Delete single applied Job
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://frontend-internio.herokuapp.com/")
     @GetMapping("/deleteJob/{userId}/{jobId}")
     public int deleteAppliedJobsByUserId(@PathVariable int userId, @PathVariable int jobId) throws SQLException{
         int deletedStatus = jobService.deleteAppliedJobsByUserId(userId, jobId);
@@ -63,7 +63,7 @@ public class JobController{
     }
 
     // Add single applied Job
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://frontend-internio.herokuapp.com/")
     @GetMapping("/addJob/{userId}/{jobId}")
     public int addAppliedJobsByUserId(@PathVariable int userId, @PathVariable int jobId) throws SQLException{
         int addedStatus = jobService.addAppliedJobsByUserId(userId, jobId);
