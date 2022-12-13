@@ -12,16 +12,14 @@ public class LoginRegisterDao {
     Connection conn = null;
     Statement st = null;
     ResultSet rs = null;
+    String endpoint = "csinternio-database.c1asvtesl5vr.us-east-1.rds.amazonaws.com";
+    String port = "3306";
+    String user = "admin";
+    // replace with your own password
+    String password = "12345678A-";
 
     public int LoginDao(String username, String userpassword) throws SQLException {
         // Set up the connection base
-        String endpoint = "localhost";
-        String port = "3306";
-        String user = "root";
-        
-        // replace with your own password
-        String password = "wdmzsljh2015A-2024";
-
         String connectionAddress = "jdbc:mysql://" + endpoint + ":" + port + "/joblistings?user=" + user + "&password=" + password;
 
         // Set up the Connection with the Database
@@ -45,14 +43,6 @@ public class LoginRegisterDao {
             return -1;
         }
         else{
-            String endpoint = "localhost";
-            String port = "3306";
-            String user = "root";
-
-            // replace with your own password
-            String password = "wdmzsljh2015A-2024";
-
-
             String connectionAddress = "jdbc:mysql://" + endpoint + ":" + port + "/joblistings?user=" + user + "&password=" + password;
 
             conn = DriverManager.getConnection(connectionAddress);
@@ -64,13 +54,6 @@ public class LoginRegisterDao {
 
     public boolean CheckExsist(String username) throws SQLException {
         List<UserModel> list = new ArrayList<>();
-        String endpoint = "localhost";
-        String port = "3306";
-        String user = "root";
-
-        // replace with your own password
-        String password = "wdmzsljh2015A-2024";
-
         String connectionAddress = "jdbc:mysql://" + endpoint + ":" + port + "/joblistings?user=" + user + "&password=" + password;
     
         conn = DriverManager.getConnection(connectionAddress);

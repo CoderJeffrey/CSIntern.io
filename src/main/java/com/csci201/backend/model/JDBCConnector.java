@@ -31,12 +31,12 @@ public class JDBCConnector {
     ResultSet rs = null;
 
     public JDBCConnector() throws SQLException{
-        endpoint = "localhost";
+        endpoint = "csinternio-database.c1asvtesl5vr.us-east-1.rds.amazonaws.com";
         port = "3306";
-        user = "root";
+        user = "admin";
 
         // replace with your own password
-        password = "wdmzsljh2015A-2024";
+        password = "12345678A-";
         
         conn = DriverManager.getConnection("jdbc:mysql://" + endpoint + ":" + port + "/joblistings", 
                                             user, 
