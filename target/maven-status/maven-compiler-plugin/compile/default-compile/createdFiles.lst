@@ -1,0 +1,15 @@
+com\csci201\backend\service\LoginRegisterServices.class
+com\csci201\backend\dao\LoginRegisterDao.class
+com\csci201\backend\model\RegisterRequestModel.class
+com\csci201\backend\model\UserModel.class
+com\csci201\backend\model\JobRequestModel.class
+com\csci201\backend\model\LoginRequestModel.class
+com\csci201\backend\controler\JobController.class
+com\csci201\backend\BackendApplication.class
+com\csci201\backend\service\JobService.class
+com\csci201\backend\dao\JobRepository.class
+com\csci201\backend\model\JDBCConnector.class
+com\csci201\backend\service\UserServices.class
+com\csci201\backend\controler\LoginRegisterController.class
+com\csci201\backend\Constants.class
+com\csci201\backend\model\JobModel.class
